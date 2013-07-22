@@ -1,8 +1,9 @@
+<p id="notice"><%= notice %></p>
 <div id = "step">
   <h2>Step: <%= @step.order %></h2>
   <%= simple_format(@step.content) %>
   <br>
-  <%= link_to "All Steps", [:show, @topic] %>
+  <%= link_to "All Steps", @topic %>
   <%= link_to "Edit Step", [:edit, @topic, @step] %>
   <%= link_to "Delete Step", [@topic, @step], method: :delete, confirm: "Are you sure you want to delete this ticket?" %>
 </div>
