@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe ProjectsController do
-  it "displays an error for a missing task" do
+describe TopicsController do
+  it "displays an error for a missing How To" do
     get :show, :id => "not-here"
-    response.should redirect_to(projects_path)
-    message = "The project you were looking for could not be found."
+    response.should redirect_to(topics_path)
+    message = "The How To Topic you were looking for could not be found."
     flash[:alert].should eql(message)
   end
 end
