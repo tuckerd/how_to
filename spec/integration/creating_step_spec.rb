@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Creating Tickets" do
+feature "Creating Steps" do
   before do
     project = Factory(:topic, title: "Cutting a Pizza")
 
@@ -20,7 +20,7 @@ feature "Creating Tickets" do
   scenario "Creating a step without valid attributes fails" do
     click_button "Create Step"
     page.should have_content("Step has not been created.")
-    page.should have_content("Order can't be blank")
+    page.should have_content("Position can't be blank")
     page.should have_content("Content can't be blank")
   end
 end

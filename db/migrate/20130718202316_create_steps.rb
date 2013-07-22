@@ -1,7 +1,7 @@
 class CreateSteps < ActiveRecord::Migration
   def change
     create_table :steps do |t|
-      t.integer :order
+      t.integer :position
       t.text :content
       t.references :topic
 

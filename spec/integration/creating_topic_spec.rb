@@ -15,7 +15,7 @@ feature 'Creating Topics' do
 
   scenario "can not create a topic without a name" do
     click_button 'Create Topic'
-    page.should have_content("How To Topic has not been created.")
+    page.should have_content("How To Topic was not created.")
     page.should have_content("Title can't be blank")
   end
 end

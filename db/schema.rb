@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20130718203702) do
 
   create_table "steps", :force => true do |t|
-    t.integer  "order"
+    t.integer  "position"
     t.text     "content"
     t.integer  "topic_id"
     t.datetime "created_at", :null => false

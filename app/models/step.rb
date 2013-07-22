@@ -3,7 +3,7 @@
 # Table name: steps
 #
 #  id         :integer          not null, primary key
-#  order      :integer
+#  position   :integer
 #  content    :text
 #  topic_id   :integer
 #  created_at :datetime         not null
@@ -12,6 +12,8 @@
 
 class Step < ActiveRecord::Base
   belongs_to :topic
-  validates :order, :content, presence: true
-  attr_accessible :content, :order 
+  validates :position, :content, presence: true
+  attr_accessible :content, :position
+
+  default_scope order('position ASC')
 end

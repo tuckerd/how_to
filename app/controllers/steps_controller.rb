@@ -24,9 +24,9 @@ class StepsController < ApplicationController
   end
 
   def update
-    if @topic.update_attributes(params[:topic])
+    if @step.update_attributes(params[:step])
       flash[:notice] = "Step has been updated."
-      redirect_to [@topic, @ticket]
+      redirect_to [@topic, @step]
     else
       flash[:alert] = "Step has not been updated."
       render action: "edit"

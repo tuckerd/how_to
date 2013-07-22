@@ -17,6 +17,6 @@ feature "Editing Topics" do
   scenario "Updating a project with invalid attributes is bad!" do
     fill_in "How to...", with: ''
     click_button "Update Topic"
-    page.should have_content("How To Topic has not been created.")
+    page.should have_content("How To Topic has not been updated.")
   end
 end 
