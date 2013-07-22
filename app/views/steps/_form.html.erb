@@ -1,0 +1,12 @@
+<%= form_for [@topic, @step] do |f| %>
+  <!-- <%= f.error_messages %> -->
+  <p>
+    <%= f.label :order ,"Step Number" %>
+    <%= f.number_field :order %>
+  </p>
+  <p>
+    <%= f.label :content ,"Step Number" %>
+    <%= f.text_area :content %>   
+  </p>
+  <%= f.submit %>
+<% end %>

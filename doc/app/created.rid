@@ -1,0 +1,10 @@
+Sun, 21 Jul 2013 16:10:56 -0700
+doc/README_FOR_APP	Sun, 21 Jul 2013 16:10:39 -0700
+app/controllers/application_controller.rb	Thu, 18 Jul 2013 13:11:21 -0700
+app/controllers/steps_controller.rb	Thu, 18 Jul 2013 15:34:27 -0700
+app/controllers/topics_controller.rb	Thu, 18 Jul 2013 15:17:16 -0700
+app/helpers/application_helper.rb	Thu, 18 Jul 2013 13:11:21 -0700
+app/helpers/steps_helper.rb	Thu, 18 Jul 2013 13:44:38 -0700
+app/helpers/topics_helper.rb	Thu, 18 Jul 2013 13:20:34 -0700
+app/models/step.rb	Sun, 21 Jul 2013 15:21:42 -0700
+app/models/topic.rb	Sun, 21 Jul 2013 15:21:42 -0700
