@@ -4,7 +4,14 @@ HowTo::Application.routes.draw do
   resources :topics do
     resources :steps
   end
+
+  #authorization
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  match 'signout', to: 'sessions#destroy', as: 'signout'
 end
+
+
 #== Route Map
 # Generated on 21 Jul 2013 15:22
 #

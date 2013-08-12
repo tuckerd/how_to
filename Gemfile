@@ -8,6 +8,10 @@ gem 'rails', '3.2.13'
 gem 'sqlite3'
 
 
+#Authentication
+gem 'omniauth'
+gem 'omniauth-linkedin-oauth2'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -24,6 +28,7 @@ gem 'jquery-rails'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.11'
+  gem 'dotenv-rails'
 end
 
 group :test do
