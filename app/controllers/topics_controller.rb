@@ -1,5 +1,7 @@
 class TopicsController < ApplicationController
+  before_filter :authorize_user, except: [:index, :show]
   before_filter :find_topic, only: [:show, :edit, :update, :destroy]
+
   # GET /topics
   def index
     @topics = Topic.all

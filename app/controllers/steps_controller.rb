@@ -1,4 +1,5 @@
 class StepsController < ApplicationController
+  before_filter :authorize_user, except: [:index, :show]
   before_filter :find_topic
   before_filter :find_step, only: [:show, :edit, :update, :destroy]
 
