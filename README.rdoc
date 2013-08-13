@@ -1,6 +1,0 @@
-===How To App
-
-This is mini learning project to explore nested resources and the ability to perform CRUD actions on them.
-
-The app is a place to write how-to topics with each topic having any number of steps which can be reordered.
-
